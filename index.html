@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<style>
+  /*.link {
+    stroke: #ccc;
+  }
+
+  .node text {
+    pointer-events: none;
+    font-family: 'Roboto Condensed', sans-serif;
+  }*/
+
+  .tipup {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    /* Safari */
+    -webkit-transform: rotate(-45deg);
+    /* Firefox */
+    -moz-transform: rotate(-45deg);
+    /* IE */
+    -ms-transform: rotate(-45deg);
+    /* Opera */
+    -o-transform: rotate(-45deg);
+    /* Internet Explorer */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
+  }
+  .tipdown {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    /* Safari */
+    -webkit-transform: rotate(45deg);
+    /* Firefox */
+    -moz-transform: rotate(45deg);
+    /* IE */
+    -ms-transform: rotate(45deg);
+    /* Opera */
+    -o-transform: rotate(45deg);
+    /* Internet Explorer */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
+  }
+
+</style>
+
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script>
+    var width = 960,
+      height = 500;
+
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+
+    d3.json("data.json", function(json) {
+      /* Define the data for the circles */
+      var elem = svg.selectAll("g railStop")
+        .data(json.nodes)
+
+      /*Create and place the "blocks" containing the circle and the text */
+      var elemEnter = elem.enter()
+        .append("g")
+        .attr("transform", function(d) {
+          return "translate(" + (d.x * 100) + ",410)"
+        })
+
+      /*Create the circle for each block */
+      var circle = elemEnter.append("circle")
+        .attr("r", function(d) {
+          return d.r
+        })
+        .attr("stroke", "white")
+        .attr("stroke-width", 2)
+        .attr("fill", function(d) {
+          return d.fill
+        })
+        .attr("y", function(d) {
+          return d.y
+        })
+        .attr("x", function(d) {
+          return d.x
+        })
+      var lines = svg.attr("class", "line")
+        .selectAll("line")
+        elemEnter.append("line")
+        .style("stroke", function(d) {
+          return d.fill
+        })
+        .style("stroke-width", function(d) {
+          return 5
+        })
+        .attr("class", "tipup")
+        .attr("x1", function(d) {
+          return 0
+        })
+        .attr("y1", function(d) {
+          return 0
+        })
+        .attr("x2", function(d) {
+          return 55
+        })
+        .attr("y2", function(d) {
+          return 55
+        })
+
+      /* Create the text for each block */
+      elemEnter.append("text")
+        .attr("dx", function(d) {
+          return 25
+        })
+        .text(function(d) {
+          return d.label
+        })
+        .attr("class", "tipup");
+
+
+
+    })
+  </script>
+
+</body>
