@@ -1,7 +1,7 @@
 {"nodes":[
   {"x":1, "y":170, "r":20, "label":"Downtown Santa Monica", "fill":"#2FABD0"},
   {"x":2, "y":170, "r":20, "label":"17th St/SMC", "fill":"#2FABD0"},
-  {"x":3, "y":170, "r":20, "label":"26th st/Bergamot", "fill":"#2FABD0"},
+  {"x":3, "y":170, "r":20, "label":"26th St/Bergamot", "fill":"#2FABD0"},
   {"x":4, "y":170, "r":20, "label":"Expo/Bundy", "fill":"#2FABD0"},
   {"x":5, "y":170, "r":20, "label":"Expo/Sepulveda", "fill":"#2FABD0"},
 

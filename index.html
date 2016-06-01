@@ -52,7 +52,7 @@
       .attr("width", width)
       .attr("height", height)
 
-    d3.json("data.json", function(json) {
+    d3.json("./data.json", function(json) {
       /* Define the data for the circles */
       var elem = svg.selectAll("g railStop")
         .data(json.nodes)
