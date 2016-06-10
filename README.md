@@ -6,7 +6,7 @@ As we We move towards a more dynamic platform we will need dynamic mapping. This
 
 The index.html page uses [d3.js](https://d3js.org) to parse the data.json file and draw a few stops. Check out the code and open index.html in a browser. You will see this:
 
-![preview](https://www.evernote.com/l/ADMPK2UnfQVO-IVxLEO-rMKE9InmN6gUcTEB/image.png)
+![preview](https://www.evernote.com/l/ADM1aNMz3zdPFLpDXhYtXatKJUB46MgLvO0B/image.png)
 
 ## Blue skies
 
