@@ -1,10 +1,21 @@
 {"nodes":[
-  {"x":1, "y":170, "r":20, "label":"Downtown Santa Monica", "fill":"#2FABD0"},
-  {"x":2, "y":170, "r":20, "label":"17th St/SMC", "fill":"#2FABD0"},
-  {"x":3, "y":170, "r":20, "label":"26th st/Bergamot", "fill":"#2FABD0"},
-  {"x":4, "y":170, "r":20, "label":"Expo/Bundy", "fill":"#2FABD0"},
-  {"x":5, "y":170, "r":20, "label":"Expo/Sepulveda", "fill":"#2FABD0"},
-
-  {"x":6, "y":55, "r":20, "label":"Civic Str/Grand Park", "fill":"#CD0A21"},
-  {"x":7, "y":55, "r":20, "label":"Union Station", "fill":"#CD0A21"}
+  {"x":1, "y":1, "r":15, "label":"Downtown Santa Monica", "fill":"#2FABD0"},
+  {"x":2, "y":1, "r":15, "label":"17th St/SMC", "fill":"#2FABD0"},
+  {"x":3, "y":1, "r":15, "label":"26th st/Bergamot", "fill":"#2FABD0"},
+  {"x":4, "y":1, "r":15, "label":"Expo/Bundy", "fill":"#2FABD0"},
+  {"x":5, "y":1, "r":15, "label":"Expo/Sepulveda", "fill":"#2FABD0"},
+  {"x":1, "y":2, "r":15, "label":"North Hollywood", "fill":"#CD0A21"},
+  {"x":2, "y":2, "r":15, "label":"Universal/Studio City", "fill":"#CD0A21"},
+  {"x":3, "y":2, "r":15, "label":"Hollywood/Highland", "fill":"#CD0A21"},
+  {"x":4, "y":2, "r":15, "label":"Hollywood/Vine", "fill":"#CD0A21"},
+  {"x":5, "y":2, "r":15, "label":"Hollywood/Western", "fill":"#CD0A21"},
+  {"x":6, "y":2, "r":15, "label":"Vermont/Sunset", "fill":"#CD0A21"},
+  {"x":7, "y":2, "r":15, "label":"Vermont/Santa Monica", "fill":"#CD0A21"},
+  {"x":8, "y":2, "r":15, "label":"Vermont/Beverly", "fill":"#CD0A21"},
+  {"x":9, "y":2, "r":15, "label":"Wilshire/Vermont", "fill":"#CD0A21"},
+  {"x":10, "y":2, "r":15, "label":"Westlake/MacArthur Park", "fill":"#CD0A21"},
+  {"x":11, "y":2, "r":15, "label":"7th St/Metro Center", "fill":"#CD0A21"},
+  {"x":12, "y":2, "r":15, "label":"Pershing Square", "fill":"#CD0A21"},
+  {"x":13, "y":2, "r":15, "label":"Civic Str/Grand Park", "fill":"#CD0A21"},
+  {"x":14, "y":2, "r":15, "label":"Union Station", "fill":"#CD0A21"}
 ]}

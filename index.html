@@ -45,7 +45,7 @@
 <body>
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script>
-    var width = 960,
+    var width = 1111,
       height = 500;
 
     var svg = d3.select("body").append("svg")
@@ -61,7 +61,7 @@
       var elemEnter = elem.enter()
         .append("g")
         .attr("transform", function(d) {
-          return "translate(" + (d.x * 100) + ",410)"
+          return "translate(" + (d.x * 70) + ","+ (d.y * 150) +")"
         })
 
       /*Create the circle for each block */
